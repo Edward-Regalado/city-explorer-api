@@ -31,7 +31,6 @@ function WeatherForecast(day) {
 function handleErrors(err, response) {
   response.status(500).send('Internal error');
 }
-
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 
