@@ -1,16 +1,35 @@
-# city-explorer-server
+# city-explorer-api
 
 **Author**: Tony Regalado
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.0.0
 
 ## Overview
 This is the server side application, which sends weather data to my city-explorer app when requested.
 
+## Web request-response cycle
+![WRRC](https://user-images.githubusercontent.com/
+70992980/113965796-e4164580-97e2-11eb-96c0-bfed6e7ef7b5.
+PNG)
+
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+npm install dotenv, cors and express.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+[Node JS](https://nodejs.org/en/)
+
+[NPM JS](https://docs.npmjs.com/)
+
+[NPM JS package:axios](https://www.npmjs.com/package/react-axios)
+
+[NPM JS package:cors](https://expressjs.com/en/resources/middleware/cors.html)
+
+[Express JS](http://expressjs.com/en/4x/api.html)
+
+[NPM JS package:dotenv](https://www.npmjs.com/package/dotenv)
+
+[Heroku](https://www.heroku.com/home)
+
+[Trello:project board](https://trello.com/en-US)
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
@@ -22,10 +41,10 @@ This is the server side application, which sends weather data to my city-explore
 
 Name of feature: city-explorer-server
 
-Estimate of time needed to complete: 4 hours
+Estimate of time needed to complete: 2 hours
 
-Start time: 
+Start time: 8:00
 
-Finish time: 
+Finish time: 11:30
 
-Actual time needed to complete: 
+Actual time needed to complete: 2.5 hours
