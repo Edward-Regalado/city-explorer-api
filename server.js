@@ -15,7 +15,7 @@ const app = express();
 app.use(cors());
 
 // PORT set to process.env.PORT in .env or PORT 3001 for default
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 function WeatherForecast(day) {
   this.date = day.datetime;
