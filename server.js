@@ -27,23 +27,9 @@ function Movies(infor) {
   this.overview = infor.overview;
 }
 
-// function handleErrors(err, response) {
-// response.status(500).send('Internal error');
-// }
-
-
-// app.get('/weather', (request, response) => {
-// try {
-// const mappedWeatherData = weatherData.data.map(day => new WeatherForecast(day));
-// response.send(mappedWeatherData);
-// } catch (error) {
-// handleErrors(error, response);
-// }
+// app.get('/', (request, response) => {
+// response.send('hello');
 // });
-
-app.get('/', (request, response) => {
-  response.send('hello');
-});
 
 app.get('/weather', (request, response) => {
   superagent.get('https://api.weatherbit.io/v2.0/forecast/daily')
@@ -54,7 +40,6 @@ app.get('/weather', (request, response) => {
       lon: request.query.lon
     })
     .then(weatherData => {
-      // console.log(weatherData.body.city_name);
       response.send(weatherData.body.data.map(day => (new WeatherForecast(day))));
     })
     .catch(err => (err.request, err.response));
