@@ -7,8 +7,8 @@ const cors = require('cors');
 const superagent = require('superagent');
 
 // importing the objects from the weather.json file and assign to varible so we can use it.
-const weatherData = require('./data/weather.json');
-const { request } = require('express');
+// const weatherData = require('./data/weather.json');
+// const { request } = require('express');
 
 
 const app = express();
@@ -27,11 +27,12 @@ function Movies(infor) {
   this.overview = infor.overview;
 }
 
-// app.get('/', (request, response) => {
-// response.send('hello');
+// app.get('/', (req, res) => {
+// res.send('backend server is listening');
 // });
 
 app.get('/weather', (request, response) => {
+  console.log('backend is listening');
   superagent.get('https://api.weatherbit.io/v2.0/forecast/daily')
     .query({
       key: process.env.WEATHERBIT_API_KEY,
@@ -41,6 +42,7 @@ app.get('/weather', (request, response) => {
     })
     .then(weatherData => {
       response.send(weatherData.body.data.map(day => (new WeatherForecast(day))));
+      console.log(response);
     })
     .catch(err => (err.request, err.response));
 });
