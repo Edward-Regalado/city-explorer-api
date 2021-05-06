@@ -7,7 +7,8 @@
 This is the server side application, which sends weather data to my city-explorer app when requested.
 
 ## Web request-response cycle
-![WRRC](https://user-images.githubusercontent.com/70992980/117367501-1d3fe500-ae77-11eb-863d-c2c52defde94)
+![WRRC](https://user-images.githubusercontent.com/70992980/117368498-78260c00-ae78-11eb-8f3c-c732495582a7.PNG)
+
 
 ## Getting Started
 npm install dotenv, cors and express.
