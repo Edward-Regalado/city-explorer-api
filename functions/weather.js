@@ -1,4 +1,4 @@
-let cache = require('./modules/weatherCache.js');
+let cache = require('../modules/weatherCache.js');
 
 const superagent = require('superagent');
 
