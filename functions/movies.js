@@ -1,5 +1,5 @@
 'use strict';
-let cache = require('./modules/moviesCache');
+let cache = require('../modules/moviesCache');
 
 const superagent = require('superagent');
 
